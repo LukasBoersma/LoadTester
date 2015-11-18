@@ -14,15 +14,15 @@ If you think you found a bug, you can open an Issue on Github. If you make chang
 
 The basic procedure is:
 
-1. Create a `LoadTester`
+1. Create a `TestRunner`
 2. Call `AddTest()` to define the tests
 3. Start execution with `Start()`.
 
 Here is a simple C# example that measures the performance of .NET's `Array.CopyTo` method:
 
 ````csharp
-// Create the load tester. Configure it to run lots of tests in parallel.
-var tester = new LoadTester
+// Create the test runner. Configure it to run lots of tests in parallel.
+var tester = new TestRunner
 {
     ParallelTests = 128
 };
