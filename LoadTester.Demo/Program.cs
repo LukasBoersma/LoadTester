@@ -11,8 +11,8 @@ namespace LoadTester.Demo
     {
         static void Main(string[] args)
         {
-            // Create the load tester. Configure it to run lots of tests in parallel.
-            var tester = new LoadTester
+            // Create the test runner. Configure it to run lots of tests in parallel.
+            var tester = new TestRunner
             {
                 ParallelTests = 128
             };
