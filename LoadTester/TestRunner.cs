@@ -15,7 +15,7 @@ namespace LoadTester
     /// It can run many tests in parallel (<see cref="ParallelTests"/>), and it can be configured to repeat tests at a limited rate (<see cref="TargetTestsPerSecond"/>).
     /// Use <see cref="AddTest"/> to add test functions, then run <see cref="Start"/> to start running the tests.
     /// </remarks>
-    public class LoadTester
+    public class TestRunner
     {
         /// <summary>
         /// The list of tests that will be run. Tests will be drawn randomly from this list.
@@ -39,9 +39,7 @@ namespace LoadTester
         /// <remarks>
         /// After calling this method, there will be <see cref="ParallelTests"/> many worker
         /// threads that repeatedly run random tests from the list of <see cref="Tests"/>.
-        /// 
         /// Call <see cref="Stop"/> if you want to stop running tests.
-        /// 
         /// Will throw an InvalidOperationException if tests are already running.
         /// </remarks>
         public void Start()
