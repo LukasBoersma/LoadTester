@@ -1,5 +1,7 @@
 # LoadTester
 
+[![Build status](https://ci.appveyor.com/api/projects/status/bathi6568bv6x7x1?svg=true)](https://ci.appveyor.com/project/LukasBoersma/loadtester)
+
 LoadTester is a framework for load tests in .NET. It runs a given set of tests repeatedly and measures their performance.
 
 ## License and contributing
